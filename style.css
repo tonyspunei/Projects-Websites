@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Nav Design */
+nav {
+  height: 10vh;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Logo Design */
+.logo {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.logo > h1 {
+  font-size: 2.4rem;
+  color: #ff5745;
+  font-weight: bold;
+}
+
+/* Links Design */
+.links {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links > a {
+  text-decoration: none;
+  color: #333e63;
+  font-size: 1.2rem;
+}
+
+/* Buttons */
+.buttons {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.buttons .btn {
+  height: 60%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.buttons .getBtn {
+  background: #ff5745;
+  color: #ffffff;
+  width: 50%;
+}
+
+/* HERO Design */
+.hero {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Center Test Design */
+.centerInfo {
+  height: 40%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centerInfo > h1 {
+  font-size: 4rem;
+  color: #333e63;
+  margin-bottom: 1rem;
+}
+.centerInfo > p {
+  font-size: 1.1rem;
+  width: 80%;
+  margin-bottom: 2rem;
+  color: #333e63;
+}
+
+.centerInfo > .positionsBtn {
+  background: #ff5745;
+  height: 3rem;
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Background Image */
+.backgroundColor > img {
+  position: absolute;
+  bottom: -25rem;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+}
+
+/* Value Section */
+.valueSection > .text {
+  font-size: 10rem;
+  width: 100%;
+  font-weight: 900;
+  color: #ecedf0;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .links {
+    display: none;
+  }
+  .buttons {
+    width: 50%;
+    text-align: center;
+  }
+
+  .hero {
+    height: 100vh;
+    justify-content: flex-start;
+  }
+
+  .centerInfo {
+    margin-top: 5rem;
+    height: 100%;
+    width: 90%;
+    margin: 5 auto;
+  }
+  .centerInfo > p {
+    width: 90%;
+    height: auto;
+  }
+  .valueSection > .text {
+    font-size: 6rem;
+  }
+  .logo > h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .links {
+    display: none;
+  }
+  .buttons {
+    width: 50%;
+  }
+  .hero {
+    height: 90vh;
+    justify-content: flex-start;
+  }
+  .centerInfo {
+    margin-top: 5rem;
+    height: 100%;
+    width: 90%;
+    margin: 5 auto;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+}
